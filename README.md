@@ -79,9 +79,9 @@ sudo ./mac_manager.sh restore eth0
 Scan the local network:
 sudo ./mac_manager.sh scan eth0
 
-Error Handling and Validation
+### Error Handling and Validation
 
-The script implements several checks to ensure robust operation:
+    The script implements several checks to ensure robust operation:
 
     Argument Validation:
     It checks for the correct number of command-line arguments and displays a usage message if insufficient arguments are provided.
