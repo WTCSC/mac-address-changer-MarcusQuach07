@@ -31,25 +31,24 @@ The script depends on the following:
 
 ### Installation on Ubuntu/Debian
 
-```bash
 sudo apt update
 sudo apt install iproute2 | arp-scan
 
-Installation
+### Installation
 
-    Clone this repository (or download the script file):
+1. Clone this repository (or download the script file):
 
-git clone https://github.com/yourusername/mac-manager.git
+2. git clone https://github.com/yourusername/mac-manager.git
 
-Change directory into the repository:
+3. Change directory into the repository:
 
-cd mac-manager
+4. cd mac_manager
 
-Make the script executable:
+### Make the script executable:
 
-    chmod +x mac_manager.sh
+chmod +x mac_manager.sh
 
-Usage
+### Usage
 
 Run the script with the following syntax:
 
@@ -63,27 +62,22 @@ Where <command> can be:
     change - Change to a user-specified MAC address (requires <new_mac>).
     scan - Scan the local network for devices and display their MAC addresses with vendor info.
 
-Examples
+### Examples
 
-    Backup the current MAC:
-
+Backup the current MAC:
 sudo ./mac_manager.sh backup eth0
 
 Change to a random MAC:
-
 sudo ./mac_manager.sh random eth0
 
 Change to a specific MAC:
-
 sudo ./mac_manager.sh change eth0 00:11:22:33:44:55
 
 Restore the original MAC:
-
 sudo ./mac_manager.sh restore eth0
 
 Scan the local network:
-
-    sudo ./mac_manager.sh scan eth0
+sudo ./mac_manager.sh scan eth0
 
 Error Handling and Validation
 
