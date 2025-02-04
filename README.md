@@ -46,13 +46,13 @@ sudo apt install iproute2 | arp-scan
 
 ### Make the script executable:
 
-chmod +x mac_manager.sh
+    chmod +x mac_manager.sh
 
 ### Usage
 
-Run the script with the following syntax:
+    Run the script with the following syntax:
 
-sudo ./mac_manager.sh <command> <interface> [<new_mac>]
+    sudo ./mac_manager.sh <command> <interface> [<new_mac>]
 
 Where <command> can be:
 
@@ -64,20 +64,20 @@ Where <command> can be:
 
 ### Examples
 
-Backup the current MAC:
-sudo ./mac_manager.sh backup eth0
+    Backup the current MAC:
+    sudo ./mac_manager.sh backup eth0
 
-Change to a random MAC:
-sudo ./mac_manager.sh random eth0
+    Change to a random MAC:
+    sudo ./mac_manager.sh random eth0
 
-Change to a specific MAC:
-sudo ./mac_manager.sh change eth0 00:11:22:33:44:55
+    Change to a specific MAC:
+    sudo ./mac_manager.sh change eth0 00:11:22:33:44:55
 
-Restore the original MAC:
-sudo ./mac_manager.sh restore eth0
+    Restore the original MAC:
+    sudo ./mac_manager.sh restore eth0
 
-Scan the local network:
-sudo ./mac_manager.sh scan eth0
+    Scan the local network:
+    sudo ./mac_manager.sh scan eth0
 
 ### Error Handling and Validation
 
