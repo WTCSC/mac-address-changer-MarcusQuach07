@@ -106,21 +106,21 @@ Common Troubleshooting Tips
     Check Interface Name:
     Verify your network interface exists with:
 
-ip link show
+    ip link show
 
-Use the correct interface name (e.g., eth0, wlan0, enp3s31f6).
+    Use the correct interface name (e.g., eth0, wlan0, enp3s31f6).
 
-Install Dependencies:
-Ensure all dependencies (iproute2, arp-scan) are installed. If the scan command fails, verify installation with:
+### Install Dependencies:
+    Ensure all dependencies (iproute2, arp-scan) are installed. If the scan command fails, verify installation with:
 
-sudo apt install arp-scan
+    sudo apt install arp-scan
 
-Verify Changes:
-After executing a change, use the command:
+### Verify Changes:
+    After executing a change, use the command:
 
-ip link show <interface>
+    ip link show <interface>
 
-to verify that the MAC address has been updated.
+    to verify that the MAC address has been updated.
 
 Persistent Changes:
 Note that changes made using this script are temporary. A reboot will revert to the original hardware MAC address unless additional configuration is used to make changes persistent.
