@@ -98,7 +98,7 @@ The script implements several checks to ensure robust operation:
     Command Execution:
     Each critical step (e.g., bringing the interface down, setting the MAC address, bringing it up) is checked for errors, and appropriate error messages are displayed if any step fails.
 
-Common Troubleshooting Tips
+### Common Troubleshooting Tips
 
     Run as Root:
     Since changing MAC addresses requires elevated privileges, always run the script with sudo.
